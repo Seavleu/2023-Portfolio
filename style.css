@@ -396,3 +396,58 @@ footer {
   transform: translateX(20px);
   cursor: pointer;
 }
+
+
+/* text scroll */
+.text-scroll{
+ display: inline-block;
+ overflow: hidden;
+ height: 80px;
+}
+.texbox{
+  display: flex;
+  padding: 0 0 1.5rem 0;
+  flex-direction: column;
+  /* transform: translateY(-25%); */
+  animation: animate 5s infinite;
+}
+
+@keyframes animate{
+  0%{
+    transform: translateY(0%);
+  }
+  20%{
+    transform: translateY(0%);
+  }
+  25%{
+    transform: translateY(-25%);
+  }
+  45%{
+    transform: translateY(-25%);
+  }
+  50%{
+    transform: translateY(-50%);
+  }
+  70%{
+    transform: translateY(-50%);
+  }
+  75%{
+     transform: translateY(-75%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+/* 
+.texbox :first-child{
+  color: gold;
+}
+
+.texbox :nth-child(2){
+  color: #12f3e0;
+}
+
+.texbox :nth-child(3){
+  color: rgb(229, 36, 216);
+}
+ */
